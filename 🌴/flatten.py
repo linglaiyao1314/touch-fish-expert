@@ -22,7 +22,7 @@
          \
           6
 """
-from tree import *
+from utils import *
 
 
 class Solution:

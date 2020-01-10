@@ -34,7 +34,7 @@
   1 5
  0 2 4 6
 """
-from tree import *
+from utils import *
 
 
 class Solution:

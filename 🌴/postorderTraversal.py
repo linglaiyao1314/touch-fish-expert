@@ -12,7 +12,7 @@
 输出: [3,2,1]
 """
 
-from tree import *
+from utils import *
 from typing import List
 
 

@@ -1,4 +1,4 @@
-from linklist import ListNode
+from utils import ListNode
 from typing import List
 
 

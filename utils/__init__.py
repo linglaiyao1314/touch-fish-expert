@@ -34,6 +34,11 @@ class TreeNode:
     # def print_array(self):
     #
 
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
 
 t = TreeNode(3)
 t.left = TreeNode(1)

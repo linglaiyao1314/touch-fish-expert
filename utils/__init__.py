@@ -39,6 +39,24 @@ class ListNode:
         self.val = x
         self.next = None
 
+    @classmethod
+    def make(cls, numbers):
+        node = ListNode(None)
+        ptr = node
+        for i in numbers:
+            n = ListNode(i)
+            ptr.next = n
+            ptr = ptr.next
+        return node.next
+
+    def __str__(self):
+        s = []
+        ptr = self
+        while ptr:
+            s.append(ptr.val)
+            ptr = ptr.next
+        return str(s)
+
 
 t = TreeNode(3)
 t.left = TreeNode(1)

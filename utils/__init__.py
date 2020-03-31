@@ -1,5 +1,7 @@
 import datetime
 
+from .mylist import ListNode
+
 print(f"今天是 {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 
@@ -34,28 +36,6 @@ class TreeNode:
     # def print_array(self):
     #
 
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-    @classmethod
-    def make(cls, numbers):
-        node = ListNode(None)
-        ptr = node
-        for i in numbers:
-            n = ListNode(i)
-            ptr.next = n
-            ptr = ptr.next
-        return node.next
-
-    def __str__(self):
-        s = []
-        ptr = self
-        while ptr:
-            s.append(ptr.val)
-            ptr = ptr.next
-        return str(s)
 
 
 t = TreeNode(3)

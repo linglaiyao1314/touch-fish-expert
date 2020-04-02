@@ -5,7 +5,7 @@
 from typing import List
 from collections import deque
 
-from tree import TreeNode
+from utils import *
 
 
 class Solution:
